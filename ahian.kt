@@ -8,3 +8,4 @@ interface IVehicle{
 class Car: IVehicle{
   
 }
+
