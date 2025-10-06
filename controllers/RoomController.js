@@ -6,7 +6,8 @@ var endpointresponse = require('../util/endpointResponse')
 
 var sucess_meg= 'Action executed sucessfully.'
 
-exports.list_all_rooms = function(req, res) {  
+exports.list_all_rooms = function(req, res) {
+    // Hola  
     let data = model.get_rooms();
     let result = {
         data: data,
