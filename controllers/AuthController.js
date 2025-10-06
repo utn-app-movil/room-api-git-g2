@@ -6,6 +6,7 @@ var httpresponse = require('../util/httpResponse')
 var endpointresponse = require('../util/endpointResponse')
 
 exports.authUser = function(req, res) {
+    // Está función recibe el username y password y valida si el usuario existe en la base de datos
     let result={};
     let httpCode=0;
     if (req.body.username === undefined || req.body === null || req.body.length === 0 || req.body === ''){
