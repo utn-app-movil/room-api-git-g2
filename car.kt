@@ -6,5 +6,25 @@ interface IVehicle{
 }
 
 class Car: IVehicle{
+
+  private var acceleration = 0;
+  private var turnedOn = true;
+
+   constructor(acceleration: Int, turnedOn: Boolean){
+    this._acceleration = acceleration;
+    this._turnedOn = turnedOn; 
+   }
   
+  override fun brake{
+    acceleration = 0;
+    println("The vehicle is stopped. The acceletarion is $acceleration")
+  }
+  
+  override fun turn_off_engine {
+    acceleration = 0; 
+    turnedOn = false; 
+    if turnedOn == false {
+      println("The vehicle was turned off. The acceleration is $acceleration ")
+    }
+  }
 }
