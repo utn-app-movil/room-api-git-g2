@@ -15,12 +15,12 @@ class Car: IVehicle{
     this._turnedOn = turnedOn; 
    }
   
-  override fun brake{
+  override fun brake{ //Jorjan
     acceleration = 0;
     println("The vehicle is stopped. The acceletarion is $acceleration")
   }
   
-  override fun turn_off_engine {
+  override fun turn_off_engine { //Jorjan
     acceleration = 0; 
     turnedOn = false; 
     if turnedOn == false {
