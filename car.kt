@@ -6,6 +6,6 @@ class Car : IVehicle {
     override fun start_engine() {
         engineOn = true
         acceleration = 0
-        println("🚗 The car engine was started. Acceleration = $acceleration km/h²")
+        println(" The car engine was started. Acceleration = $acceleration km/h²")
     }
 }
