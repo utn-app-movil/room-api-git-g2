@@ -39,3 +39,40 @@ class Car : IVehicle {
         }
     }
 }
+
+
+class Motorcycle : IVehicle {
+
+    private var speed = 0
+    private var engineStarted = false
+
+    override fun start_engine() {
+        engineStarted = true
+        speed = 0
+        println("The motorcycle engine is now on. Speed is $speed.")
+    }
+
+    override fun accelerate(acceleration: Int) {
+        if (engineStarted) {
+            speed += acceleration
+            println("The motorcycle speeds up. Now it goes at $speed.")
+        } else {
+            println("You can't accelerate, the engine is off.")
+        }
+    }
+
+    override fun brake() {
+        speed = 0
+        println("The motorcycle stopped. Speed is $speed.")
+    }
+
+    override fun turn_off_engine() {
+        if (speed == 0) {
+            engineStarted = false
+            println("The motorcycle engine was turned off.")
+        } else {
+            println("Can't turn off the engine while moving.")
+        }
+    }
+}
+
