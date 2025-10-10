@@ -19,4 +19,10 @@ class Car : IVehicle {
         this.acceleration += acceleration
         println("The current acceleration of the vehicle is ${this.acceleration}")
     }
+
+    override fun brake() {
+        acceleration = 0
+        println("The vehicle is stopped. Acceleration = $acceleration km/h²")
+    }
+    
 }
