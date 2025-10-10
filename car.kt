@@ -14,4 +14,15 @@ class Car: IVehicle {
     acceleration = 0
     println("El vehículo ha arrancado y la aceleración es: $acceleration")
   }
+
+  override fun accelerate(newAcceleration: Int) {
+    if(newAcceleration <= 0){
+      println("La acceleración debe ser mayor a 0")
+    }
+    else {
+      val currentAcceleration = acceleration
+      acceleration += newAcceleration
+      println("La aceleración es: $currentAcceleration y ha aumentado hasta: $newAcceleration")
+      }
+    }
 }
