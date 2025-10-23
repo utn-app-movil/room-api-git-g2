@@ -7,8 +7,4 @@ interface IVehicle{
 
 class Car: IVehicle{
   
-  fun start_engine() {
-        println("El vehículo ha sido encendido. La aceleración es 0.")
-    }
-  
 }
