@@ -20,14 +20,16 @@ class Car : IVehicle {
         // Pending implementation
     }
 
-    // To be implemented by another team member
+    // Implemented by Daniel López
     override fun brake() {
-        // Pending implementation
+        acceleration = 0
+        println("The vehicle is stopped and the acceleration is 0")
     }
 
-    // To be implemented by another team member
+    // Implemented by Daniel López
     override fun turn_off_engine() {
-        // Pending implementation
+        acceleration = 0
+        println("The vehicle was turned off with acceleration = 0")
     }
 }
 
@@ -35,4 +37,6 @@ fun main() {
     val car = Car()
 
     car.start_engine()
+    car.brake()
+    car.turn_off_engine()
 }
