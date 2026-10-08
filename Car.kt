@@ -23,7 +23,13 @@ class Car: IVehicle{
     currentAcceleration = 0
     println("The vehicle is stopped and the acceleration is 0")
 }
+    //made by Marcos
+    override fun turn_off_engine() {
+        currentAcceleration = 0
+        println("The vehicle was turned off with acceleration = 0")
+    }
 }
+
 
 
 fun main() {
@@ -32,4 +38,5 @@ fun main() {
     car.accelerate(10)
     car.accelerate(20)
     car.brake()
+    car.turn_off_engine()
 }
