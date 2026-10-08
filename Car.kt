@@ -18,11 +18,18 @@ class Car: IVehicle{
         currentAcceleration += acceleration
         println("The current acceleration of the vehicle is $currentAcceleration")
     }
+     //made by Jose
+   override fun brake() {
+    currentAcceleration = 0
+    println("The vehicle is stopped and the acceleration is 0")
 }
+}
+
 
 fun main() {
     val car = Car()
     car.start_engine()
     car.accelerate(10)
     car.accelerate(20)
+    car.brake()
 }
