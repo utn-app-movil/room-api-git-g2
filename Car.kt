@@ -7,6 +7,11 @@ interface IVehicle{
 
 class Car: IVehicle{
 
+  // Implementacion de Stacy
+    override fun start_engine() {
+        println("The vehicle was started and the acceleration is 0")
+}
+
   override fun brake() {
     println("The vehicle is stopped and the acceleration is 0")
 }
