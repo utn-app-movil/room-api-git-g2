@@ -6,6 +6,12 @@ interface IVehicle{
 }
 
 class Car: IVehicle{
+  
+  override fun turn_off_engine() {
+    acceleration = 0
+    println("El vehiculo fue apagado y la aceleracion es 0")
+  }
+
   override fun start_engine() {
     println("El motor está encendido. La aceleración es 0")
   }
