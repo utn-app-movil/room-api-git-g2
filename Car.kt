@@ -27,7 +27,17 @@ class Car: IVehicle{
 
     // 4) turn_off_engine
     override fun turn_off_engine() {
-        acceleration = 0
-        println("the vehicle was turned off. currentAcceleration = $acceleration")
+        currentAcceleration = 0
+        println("The vehicle was turned off. currentAcceleration = $currentAcceleration")
     }
+
+}
+  fun main() {
+  val car = Car()
+  car.start_engine()
+  car.accelerate(10)
+  car.accelerate(20)
+  car.brake()
+  car.turn_off_engine()
+
 }
