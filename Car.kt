@@ -16,7 +16,15 @@ class Car: IVehicle{
     println("The vehicle is stopped and the acceleration is 0")
 }
 
+var currentAcceleration: Int = 0
+
+override fun accelerate(acceleration: Int) {
+    currentAcceleration += acceleration
+    println("The current acceleration of the vehicle is $currentAcceleration")
+}
+
 
 }
+ 
   
 
