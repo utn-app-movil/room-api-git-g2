@@ -6,5 +6,27 @@ interface IVehicle{
 }
 
 class Car: IVehicle{
-  
+  private var currentAcceleration: Int = 0
+
+   // 1) start_engine
+    override fun start_engine() {
+        currentAcceleration = 0
+        println("The vehicle was started. Acceleration = $currentAcceleration")
+    }
+
+    // 2) accelerate
+    override fun accelerate(acceleration: Int) {
+        currentAcceleration += acceleration
+        println("Current acceleration = $currentAcceleration")
+    }
+
+    // 3) brake
+    override fun brake() {
+        TODO("Implementado por otro integrante")
+    }
+
+    // 4) turn_off_engine
+    override fun turn_off_engine() {
+        TODO("Implementado por otro integrante")
+    }
 }
