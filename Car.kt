@@ -5,8 +5,7 @@ interface IVehicle{
   fun turn_off_engine() //print a message the vehicle was turned off with acceleration = 0
 }
 
-class Car: IVehicle{
-  
+class Car: IVehicle{  
   
   override fun start_engine() {
     println("El motor está encendido. La aceleración es 0")
@@ -21,17 +20,12 @@ class Car: IVehicle{
       this.acceleration = 0
       println("El vehículo está detenido y la aceleración es ${this.acceleration}")
   }
-   
   
   override fun turn_off_engine() {
     acceleration = 0
     println("El vehiculo fue apagado y la aceleracion es 0")
   }
 
-  
-
-  
- 
 
 }
 
