@@ -22,7 +22,8 @@ class Car: IVehicle{
 
     // 3) brake
     override fun brake() {
-        TODO("Implementado por otro integrante")
+        currentAcceleration = 0
+        println("The vehicle is stopped. Acceleration = $currentAcceleration")
     }
 
     // 4) turn_off_engine
