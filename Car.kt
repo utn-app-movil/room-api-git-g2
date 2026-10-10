@@ -6,5 +6,10 @@ interface IVehicle{
 }
 
 class Car: IVehicle{
-  
+
+  override fun accelerate(acceleration: Int) {
+    this.acceleration += acceleration
+    println("La aceleración actual es ${this.acceleration}")
+  }
 }
+
