@@ -5,27 +5,28 @@ interface IVehicle{
   fun turn_off_engine() //print a message the vehicle was turned off with acceleration = 0
 }
 
-class Car: IVehicle{  
-  
-  override fun start_engine() {
-    println("El motor está encendido. La aceleración es 0")
-  }
+class Car: IVehicle{
+  private var currentAcceleration: Int = 0
 
-  override fun accelerate(acceleration: Int) {
-    this.acceleration += acceleration
-    println("La aceleración actual es ${this.acceleration}")
-  }
-  
-   override fun brake() {
-      this.acceleration = 0
-      println("El vehículo está detenido y la aceleración es ${this.acceleration}")
-  }
-  
-  override fun turn_off_engine() {
-    acceleration = 0
-    println("El vehiculo fue apagado y la aceleracion es 0")
-  }
+   // 1) start_engine
+    override fun start_engine() {
+        currentAcceleration = 0
+        println("The vehicle was started. Acceleration = $currentAcceleration")
+    }
 
+    // 2) accelerate
+    override fun accelerate(acceleration: Int) {
+        currentAcceleration += acceleration
+        println("Current acceleration = $currentAcceleration")
+    }
 
+    // 3) brake
+    override fun brake() {
+        TODO("Implementado por otro integrante")
+    }
+
+    // 4) turn_off_engine
+    override fun turn_off_engine() {
+        TODO("Implementado por otro integrante")
+    }
 }
-
