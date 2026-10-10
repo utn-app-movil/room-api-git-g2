@@ -29,7 +29,7 @@ class Car : IVehicle {
         println("Aceleración actual: ${xlr8}km/h")
     }
 
-    override fun Brake() {
+    override fun brake() {
         if (xlr8 != 0) {
             xlr8 = 0
         }
