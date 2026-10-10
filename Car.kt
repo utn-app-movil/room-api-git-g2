@@ -15,4 +15,11 @@ class Car: IVehicle{
   override fun start_engine() {
     println("El motor está encendido. La aceleración es 0")
   }
+
+  
+  override fun brake() {
+      this.acceleration = 0
+      println("El vehículo está detenido y la aceleración es ${this.acceleration}")
+  }
+
 }
