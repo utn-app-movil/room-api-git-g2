@@ -12,4 +12,7 @@ class Car: IVehicle{
     println("El vehiculo fue apagado y la aceleracion es 0")
   }
 
+  override fun start_engine() {
+    println("El motor está encendido. La aceleración es 0")
+  }
 }
