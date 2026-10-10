@@ -27,6 +27,7 @@ class Car: IVehicle{
 
     // 4) turn_off_engine
     override fun turn_off_engine() {
-        TODO("Implementado por otro integrante")
+        Acceleration = 0
+        println("the vehicle was turned off. currentAcceleration = $acceleration")
     }
 }
