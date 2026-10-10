@@ -6,5 +6,12 @@ interface IVehicle{
 }
 
 class Car: IVehicle{
+     override fun brake() {
+        println("The vehicle is stopped and the acceleration is 0")
+    }
+    override fun accelerate(acceleration: Int) {
+        println("The current acceleration of the vehicle is $acceleration")
+    } 
+
   
 }
