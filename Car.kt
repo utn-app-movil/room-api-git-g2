@@ -7,19 +7,31 @@ interface IVehicle{
 
 class Car: IVehicle{
   
+  
+  override fun start_engine() {
+    println("El motor está encendido. La aceleración es 0")
+  }
+
+  override fun accelerate(acceleration: Int) {
+    this.acceleration += acceleration
+    println("La aceleración actual es ${this.acceleration}")
+  }
+  
+   override fun brake() {
+      this.acceleration = 0
+      println("El vehículo está detenido y la aceleración es ${this.acceleration}")
+  }
+   
+  
   override fun turn_off_engine() {
     acceleration = 0
     println("El vehiculo fue apagado y la aceleracion es 0")
   }
 
-  override fun start_engine() {
-    println("El motor está encendido. La aceleración es 0")
-  }
+  
 
   
-  override fun brake() {
-      this.acceleration = 0
-      println("El vehículo está detenido y la aceleración es ${this.acceleration}")
-  }
+ 
 
 }
+
